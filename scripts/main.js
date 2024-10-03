@@ -19,8 +19,22 @@ const applicationHTML = `
 
     <article class="assignments">
         <h2>Pairings</h2>
+        ${Pairings()}
     </article>
 `
 
 mainContainer.innerHTML = applicationHTML
 
+
+mainContainer.addEventListener(
+    "click", 
+    (event) => {
+        const whatWasClickedOn = event.target
+            if (whatWasClickedOn.classList.contains("kid-item")) {
+                window.alert(`${whatWasClickedOn.dataset.type} wish is ${whatWasClickedOn.dataset.wish}`)
+            } else if (whatWasClickedOn.classList.contains("celebrity-item")) {
+                window.alert(`${whatWasClickedOn.dataset.type} is a ${whatWasClickedOn.dataset.sport} star`)
+    }
+})
+    
+        

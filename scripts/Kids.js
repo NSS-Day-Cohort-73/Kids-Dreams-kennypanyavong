@@ -6,7 +6,12 @@ export const Kids = () => {
     let html = "<ol>"
 
     for (const child of children) {
-        html += `<li data-id="${child.id}" data-type="child" data-wish="${child.wish}">${child,name}</li>`
+        html += `<li class="kid-item"
+                     data-id="${child.id}" 
+                     data-type="${child.name}" 
+                     data-wish="${child.wish}">
+                     ${child.name}
+                </li>`
     }
 
     html += "</ol>"
