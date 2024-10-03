@@ -35,19 +35,15 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
-   The code that will execute when a child is clicked on is contained in the main module. 
+   > The code that will execute when a child is clicked on is contained in the main module. 
    When a user clicks on an element, a click event is triggered. The event.target will identify the exact element that was clicked on and will check the class. If it has the class kid-item, it will retrieve the child's wish using whatWasClickedOn.dataset.wish and then display a window alert showing the child's name and wish.
 
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
-   Each child has a unique celebrityId that matches which celebrity they are to be paired with. As the loop iterates over the kids array, invoking findCelebrityMatch() allows kid to be passed as an argument in the function which will find the correct match for each kid.
+   > Each child has a unique celebrityId that matches which celebrity they are to be paired with. As the loop iterates over the kids array, invoking findCelebrityMatch() allows kid to be passed as an argument in the function which will find the correct match for each kid.
 
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
-   To display the sport that a celebrity plays, each celebrity list item includes a data-sport attribute that contains the sport name. The click event listener in main.js is able to retrieve the sport associated with a celebrity using whatWasClickedOn.dataset.sport and constructs the alert message for display.
+   > To display the sport that a celebrity plays, each celebrity list item includes a data-sport attribute that contains the sport name. The click event listener in main.js is able to retrieve the sport associated with a celebrity using whatWasClickedOn.dataset.sport and constructs the alert message for display.
 
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
-   Pairings, Celebrities and Kids are imported from their respective modules. The HTML element with the id container is initialized as mainContainer so that the DOM can be manipulated. The HTML is then constructed with the imported functions which includes a heading, sections for kids and celebrities, and a section for pairings. The HTML is then rendered to the DOM by inserting it into the mainContainer. When a click happens anywhere inside mainContainer, the event handlers are executed. If the clicked element is a kid, an alert is displayed showing the child's wish using the data-wish attribute. If the clicked element is a celebrity, an alert is displayed showing the celebrity's sport using the data-sport attribute.
+   > Pairings, Celebrities and Kids are imported from their respective modules. The HTML element with the id container is initialized as mainContainer so that the DOM can be manipulated. The HTML is then constructed with the imported functions which includes a heading, sections for kids and celebrities, and a section for pairings. The HTML is then rendered to the DOM by inserting it into the mainContainer. When a click happens anywhere inside mainContainer, the event handlers are executed. If the clicked element is a kid, an alert is displayed showing the child's wish using the data-wish attribute. If the clicked element is a celebrity, an alert is displayed showing the celebrity's sport using the data-sport attribute.
 
